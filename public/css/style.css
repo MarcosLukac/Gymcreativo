@@ -1,0 +1,29 @@
+/* Mobile first */
+
+/* Desktop version */
+
+@media (min-width: 500px) {
+    .encabezado {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: space-around;
+    }
+    .encabezado-logo {
+        width: 10%;
+    }
+    .encabezado-navbar a {
+        text-decoration: none;
+    }
+    .encabezado-navbar {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        width: 30%;
+        text-align: right;
+    }
+    .encabezado-navbar-links {
+        padding: 10px;
+        font-size: 25px;
+    }
+}
