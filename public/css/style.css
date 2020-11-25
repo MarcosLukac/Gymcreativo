@@ -54,7 +54,7 @@ input#menu {
     display: inline-block;
 }
 .titulo-seccion {
-    background-color: #ea9423;
+    background-color: #68a4cd;
     padding: 5px;
     color: #ffffff;
 }
@@ -75,11 +75,51 @@ input#menu {
 /* fin capacitaciones empresariales  */
 
 /* diseño chateamos */
-
-.chateamos {
-    background-color: #68a4cd;
+input {
+    border:none;
+}
+.form-campo {
+    padding: 2px;
+    border: solid 2px #22418a;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 300px;
+    margin: 5px;
+}
+.message-form {
+    display: flex;
+    flex-direction: column;
+}
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.chateamos-boton {
+    padding: 2px;
+    border: solid 2px #22418a;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: fit-content;
+    margin: 5px;
 }
 /* fin chateamos */
+
+/* diseño footer  */
+.footer {
+    background-color: #ea9423;
+    color: #22418a;
+    padding: 20px;
+    text-align: center;
+}
+.footer-links {
+    padding: 10px;
+    color: #22418a;
+}
+/* fin footer  */
+
+
 
 /* Desktop version */
 
@@ -138,4 +178,11 @@ input#menu {
         width: 39%;
     }
     /* fin diseño gym creativo */
+
+
+
+    /* fin chateamos */
+
+    /* diseño footer  */
+    /* fin footer  */
 }

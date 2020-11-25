@@ -63,21 +63,39 @@
             <p>imagenes de las empresas que ya se capacitaron, dependiendo la cantidad, podría también ser un Carrousel</p>
         </section>
     </main>
-    <footer id="chateamos" class="chateamos">
-        <h3>¡Chateamos!</h3>
-        <form action="/" method="post">
-            <div>
-            <label for="name">Nombre</label>
-            <input type="text" name="name" id="name">
-            <label for="cell">Celular</label>
-            <input type="number" name="cell" id="cell">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email">
+    <section id="chateamos" class="chateamos">
+        <h3 class="titulo-seccion">¡Chateamos!</h3>
+        <form action="index.html" method="post">
+            <div class="form">
+                <div>
+                    <div class="form-campo">
+                        <label for="name" class="label-form">Nombre</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="form-campo">
+                        <label for="cell" class="label-form">Celular</label>
+                        <input type="number" name="cell" id="cell">
+                    </div>
+                    <div class="form-campo">
+                        <label for="email" class="label-form">E-mail</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                </div>
+                <div class="form-campo message-form">
+                    <label for="message" class="label-form">Mensaje</label>
+                    <textarea name="message" id="chateamos-message" cols="30" rows="10">Escribe aquí tu mensaje...</textarea>
+                </div>
+                <input type="submit" value="Enviar" class="chateamos-boton">
             </div>
-            <label for="message">Mensaje</label>
-            <textarea name="message" id="chateamos-message" cols="30" rows="10">Escribe aquí tu mensaje...</textarea>
-            <input type="submit" value="Enviar" class="chateamos-boton">
+            
         </form>
+    </section>
+    <footer>
+        <div class="footer">
+            <a href="" class="footer-links"><i class="fab fa-instagram"></i></a>
+            <a href="" class="footer-links"><i class="fab fa-facebook-square"></i></a>
+            <a href="" class="footer-links"><i class="fab fa-twitter"></i></a>
+        </div>
     </footer>
 </body>
 </html>
