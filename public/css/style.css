@@ -35,14 +35,57 @@ input#menu {
     padding-inline-start: 0%;
 }
 .menu-list-links {
-    color: #ea9423;
+    color: #ffffff;
     padding: 3px;
 }
+/* fin diseño encabezado */
+
+/* Diseño de ña sección GymCreativo */
+.gym-creativo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.gym-creativo-imagen {
+    display: inline-block;
+    
+}
+.gym-creativo-texto {
+    display: inline-block;
+}
+.titulo-seccion {
+    background-color: #ea9423;
+    padding: 5px;
+    color: #ffffff;
+}
+/* fin diseño gym creativo  */
+
+/* diseño entrena con nosotros  */
+.entrena-curso {
+    background-color: #ffffff;
+    border: solid 5px #22418a;
+    border-radius: 10px;
+    text-align: center;
+    width: fit-content;
+}
+
+/* fin entrena con nosotros  */
+
+/* diseño capacitaciones empresariales  */
+/* fin capacitaciones empresariales  */
+
+/* diseño chateamos */
+
+.chateamos {
+    background-color: #68a4cd;
+}
+/* fin chateamos */
 
 /* Desktop version */
 
 
 @media (min-width: 650px) {
+    /* diseño del encabezado */
     .encabezado {
         display: flex;
         justify-content: space-between;
@@ -79,4 +122,20 @@ input#menu {
     .fa-bars {
         display: none;
     }
+    /* fin diseño encabezado*/ 
+
+    /*diseño sección gym creativo */
+    .gym-creativo {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    .gym-creativo-texto {
+        width: 60%;
+        align-self: flex-start;
+    }
+    .gym-creativo-imagen {
+        width: 39%;
+    }
+    /* fin diseño gym creativo */
 }
