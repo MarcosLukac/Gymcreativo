@@ -64,13 +64,14 @@ input#menu {
 /* diseño entrena con nosotros  */
 .entrena-cursos {
     display: flex;
+    flex-direction: column;
 }
 .entrena-curso {
     background-color: #ffffff;
     border: solid 5px #22418a;
     border-radius: 10px;
     text-align: center;
-    width: 400px;
+    width: 100$;
     margin: 20px;
 }
 .entrena-curso:hover {
@@ -201,6 +202,12 @@ input {
     /* diseño entrena con nosotros  */
     .entrena-con-nosotros {
         width: 1366px;
+    }
+    .entrena-cursos {
+        flex-direction: row;
+    }
+    .entrena-curso {
+        width: 400px;
     }
     /* fin entrena  */
 
