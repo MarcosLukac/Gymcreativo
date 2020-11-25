@@ -35,8 +35,8 @@
             </nav>
         </div>  
     </header>
-    <main>
-        <section id="gym-creativo">
+    <main class="main">
+        <section id="gym-creativo" class="gym-creativo">
             <div class="gym-creativo-imagen">
                 <img src="https://placeimg.com/300/300/people" alt="Santiago Caranza">
             </div>
@@ -45,56 +45,62 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique asperiores nam incidunt at adipisci id rerum sequi. Porro aspernatur cum laborum asperiores maiores architecto repellendus deleniti nulla voluptatum nesciunt officiis corporis totam nisi labore non molestias, obcaecati sunt saepe sequi soluta quam quae est? Quisquam et voluptas obcaecati rerum. Quod sapiente officia itaque amet culpa voluptas mollitia, veniam aut vel.</p>
             </div>
         </section>
-        <section id="entrena-con-nosotros">
+        <section id="entrena-con-nosotros" class="entrena-con-nosotros">
             <h3 class="titulo-seccion">¡Entrená con nosotros!</h3>
-            <p>Carrousel</p>
             <!-- Bloque que muestre la info de un curso que es un solo elemento del -->
-            <div class="entrena-curso"> 
-                <a href=""> <!--link al fomrulario de google de cada curso-->
-                    <img src="https://placeimg.com/300/300/people" alt="">
-                    <h4>Título del curso</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam non quibusdam, sunt enim distinctio quia.</p>
-                </a>
+            <div class="entrena-cursos">
+                <div class="entrena-curso"> 
+                    <a href="" class="entrena-curso-links"> <!--link al fomrulario de google de cada curso-->
+                        <img src="https://placeimg.com/300/300/people" alt="">
+                        <h4>Curso 1</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam non quibusdam, sunt enim distinctio quia.</p>
+                        <p class="quiero-participar">Quiero participar</p>
+                    </a>
+                </div>
+                <div class="entrena-curso"> 
+                    <a href="" class="entrena-curso-links"> <!--link al fomrulario de google de cada curso-->
+                        <img src="https://placeimg.com/300/300/people" alt="">
+                        <h4>Curso 2</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam non quibusdam, sunt enim distinctio quia.</p>
+                        <p class="quiero-participar">Quiero participar</p>
+                    </a>
+                </div>
+                <div class="entrena-curso"> 
+                    <a href="" class="entrena-curso-links"> <!--link al fomrulario de google de cada curso-->
+                        <img src="https://placeimg.com/300/300/people" alt="">
+                        <h4>Curso 3</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam non quibusdam, sunt enim distinctio quia.</p>
+                        <p class="quiero-participar">Quiero participar</p>
+                    </a>
+                </div>
             </div>
         </section>
-        <section id="capacitaciones-empresariales">
+        <section id="capacitaciones-empresariales" class="capacitaciones-empresariales">
             <h3 class="titulo-seccion">Capacitaciones Empresariales</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut suscipit vitae neque iusto recusandae nisi nemo perspiciatis consequatur dignissimos! Autem rem eveniet quasi adipisci, est molestias deserunt velit repellat sunt quae laborum modi officiis. Totam consequuntur saepe veritatis possimus voluptates voluptate eos deserunt iste odio vel accusantium, repudiandae perspiciatis minus.</p>
             <p>imagenes de las empresas que ya se capacitaron, dependiendo la cantidad, podría también ser un Carrousel</p>
         </section>
+        <section id="chateamos" class="chateamos">
+            <h3 class="titulo-seccion">¡Chateamos!</h3>
+            <form action="index.html" method="post">
+                <div class="form">
+                    <div class="chateamos-campos">
+                        <input class="chateamos-input" type="text" name="name" id="name" placeholder="Nombre">
+                        <input class="chateamos-input" type="tel" name="cell" id="cell" placeholder="Celular">
+                        <input class="chateamos-input" type="email" name="email" id="email" placeholder="E-mail">
+                    </div>
+                    <div class="chateamos-campos">
+                        <textarea class="chateamos-input" name="message" id="chateamos-message" cols="30" rows="6" placeholder="Mensaje..."></textarea>
+                        <input type="submit" value="Enviar" class="chateamos-boton">
+                    </div>
+                </div>
+            </form>
+        </section>
     </main>
-    <section id="chateamos" class="chateamos">
-        <h3 class="titulo-seccion">¡Chateamos!</h3>
-        <form action="index.html" method="post">
-            <div class="form">
-                <div>
-                    <div class="form-campo">
-                        <label for="name" class="label-form">Nombre</label>
-                        <input type="text" name="name" id="name">
-                    </div>
-                    <div class="form-campo">
-                        <label for="cell" class="label-form">Celular</label>
-                        <input type="number" name="cell" id="cell">
-                    </div>
-                    <div class="form-campo">
-                        <label for="email" class="label-form">E-mail</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                </div>
-                <div class="form-campo message-form">
-                    <label for="message" class="label-form">Mensaje</label>
-                    <textarea name="message" id="chateamos-message" cols="30" rows="10">Escribe aquí tu mensaje...</textarea>
-                </div>
-                <input type="submit" value="Enviar" class="chateamos-boton">
-            </div>
-            
-        </form>
-    </section>
     <footer>
         <div class="footer">
-            <a href="" class="footer-links"><i class="fab fa-instagram"></i></a>
-            <a href="" class="footer-links"><i class="fab fa-facebook-square"></i></a>
-            <a href="" class="footer-links"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/gymcreativo/" class="footer-links"><i class="fab fa-instagram"></i></a>
+            <a href="" class="footer-links"><i class="fab fa-whatsapp"></i></a>
         </div>
     </footer>
 </body>

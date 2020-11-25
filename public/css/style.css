@@ -45,10 +45,11 @@ input#menu {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
 }
 .gym-creativo-imagen {
-    display: inline-block;
-    
+    display: inline-block;    
 }
 .gym-creativo-texto {
     display: inline-block;
@@ -61,14 +62,24 @@ input#menu {
 /* fin diseño gym creativo  */
 
 /* diseño entrena con nosotros  */
+.entrena-cursos {
+    display: flex;
+}
 .entrena-curso {
     background-color: #ffffff;
     border: solid 5px #22418a;
     border-radius: 10px;
     text-align: center;
-    width: fit-content;
+    width: 400px;
+    margin: 20px;
 }
-
+.entrena-curso:hover {
+    border: solid 5px #ea9423;
+}
+.entrena-curso-links {
+    text-decoration: none;
+    color: #22418a;
+}
 /* fin entrena con nosotros  */
 
 /* diseño capacitaciones empresariales  */
@@ -78,15 +89,15 @@ input#menu {
 input {
     border:none;
 }
-.form-campo {
+.chateamos-input {
     padding: 2px;
     border: solid 2px #22418a;
     border-radius: 5px;
     background-color: #ffffff;
     width: 300px;
-    margin: 5px;
+    margin: 6px;
 }
-.message-form {
+.chateamos-campos {
     display: flex;
     flex-direction: column;
 }
@@ -163,9 +174,14 @@ input {
         display: none;
     }
     /* fin diseño encabezado*/ 
-
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     /*diseño sección gym creativo */
     .gym-creativo {
+        width: 1366px;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: stretch;
@@ -178,9 +194,26 @@ input {
         width: 39%;
     }
     /* fin diseño gym creativo */
+    .form {
+        flex-direction: row;
+    }
 
+    /* diseño entrena con nosotros  */
+    .entrena-con-nosotros {
+        width: 1366px;
+    }
+    /* fin entrena  */
 
+    /* diseño capacitaciones empresariales  */
+    .capacitaciones-empresariales {
+        width: 1366px;
+    }
+    /* fin capacitaciones empresariales */
 
+    /* diseño chateamos  */
+    .chateamos {
+        width: 1366px;
+    }
     /* fin chateamos */
 
     /* diseño footer  */
