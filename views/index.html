@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Creativo</title>
     <script src="https://kit.fontawesome.com/ce17e9ddbf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../public/css/style.css">
 </head>
 <body>
@@ -37,13 +41,25 @@
     </header>
     <main class="main">
         <section id="gym-creativo" class="gym-creativo">
-            <div class="gym-creativo-imagen">
-                <img src="https://placeimg.com/300/300/people" alt="Santiago Caranza">
-            </div>
-            <div class="gym-creativo-texto">
-                <h3 class="titulo-seccion">¿Que es el Gym Creativo?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique asperiores nam incidunt at adipisci id rerum sequi. Porro aspernatur cum laborum asperiores maiores architecto repellendus deleniti nulla voluptatum nesciunt officiis corporis totam nisi labore non molestias, obcaecati sunt saepe sequi soluta quam quae est? Quisquam et voluptas obcaecati rerum. Quod sapiente officia itaque amet culpa voluptas mollitia, veniam aut vel.</p>
-            </div>
+            <h3 class="titulo-seccion">¿Que es el Gym Creativo?</h3>
+            <div class="gym-creativo-div">
+                <div class="gym-creativo-imagen">
+                    <img src="https://placeimg.com/300/300/people" alt="Santiago Caranza">
+                    <h2>Santiago Caranza</h2>
+                </div>
+                <div class="gym-creativo-texto">
+                    <p>Mis inicios como actor fueron en la “Liga Mendocina de Improvisación” el espectáculo de improvisación más grande de Sudamérica.</p>
+                    <p>Mientras me desarrollaba como actor e improvisador, me recibí de Lic. en Administración de Empresas, lo que me permitió abrirme lugar en el mundo empresarial. Mis días se dividían en dos, arrancaba de saco y corbata trabajando en un banco y terminaban en algún teatro ensayando para las funciones del fin de semana.</p>
+                    <p>En 2017 decidí renunciar a la estabilidad del banco para dedicarme cien por ciento a mi pasión, actuar. Me instalé en la ciudad de Bogotá y los resultados no se demoraron en llegar; hice teatro, cine, publicidad, tv y también dicté clases de actuación. </p>
+                    <p>En 2019 decidí volver a Argentina. Buscando un equilibrio entre mis dos pasiones: los negocios y la actuación. Reconocí que muchas veces queremos (o nos exigen) ser creativos pero nadie nos dice ¿Cómo ser creativos?</p>
+                    <p>Por eso decidí combinar mis conocimientos para ayudar a las personas a ser más creativas y fundé GymCreativo. Me capacité en Gamification en la Universidad de Pennsylvania y estudie Desing Thinking en Brother Barcelona. De esta manera sumé herramientas y conocimientos que me permiten solucionar problemas de forma integral.</p>
+                </div>
+            </div>  
+        </section>
+        <section class="creatividad">
+            <div><h3>Creatividad</h3></div>
+            <div class="creatividad-texto">
+                <p>Muchas veces pensamos que la creatividad es un momento de suerte, algo que tienen solo los artistas o un don que “yo no tengo” pero entre las miles de definiciones que existen, todas coinciden que la creatividad es una capacidad y como tal se desarrolla para poder aumentarla. Por lo tanto mientras más entrenemos nuestra creatividad más creativos nos volvemos. También la ciencia ya demostró que no importa la edad que tengamos, podemos aprender cosas nuevas y ser más creativos.</p></div>
         </section>
         <section id="entrena-con-nosotros" class="entrena-con-nosotros">
             <h3 class="titulo-seccion">¡Entrená con nosotros!</h3>
@@ -51,7 +67,7 @@
             <div class="entrena-cursos">
                 <div class="entrena-curso"> 
                     <a href="" class="entrena-curso-links"> <!--link al fomrulario de google de cada curso-->
-                        <img src="https://placeimg.com/300/300/people" alt="">
+                        <img src="https://placeimg.com/300/300/people" alt="" class="entrena-curso-imagen">
                         <h4>Curso 1</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam non quibusdam, sunt enim distinctio quia.</p>
                         <p class="quiero-participar">Quiero participar</p>
@@ -59,17 +75,19 @@
                 </div>
                 <div class="entrena-curso"> 
                     <a href="" class="entrena-curso-links"> <!--link al fomrulario de google de cada curso-->
-                        <img src="https://placeimg.com/300/300/people" alt="">
-                        <h4>Curso 2</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam non quibusdam, sunt enim distinctio quia.</p>
+                        <img src="https://placeimg.com/300/300/people" alt="" class="entrena-curso-imagen">
+                        <h4>Desarrollo creativo para emprendedores</h4>
+                        <p>En este Workshop vamos a realizar ejercicios especialmente diseñados para “encontrar” nuevas oportunidades de negocio, flexibilidad para poder adaptarnos rápidamente a los cambios y llevar los emprendimientos al próximo nivel.</p>
                         <p class="quiero-participar">Quiero participar</p>
                     </a>
                 </div>
                 <div class="entrena-curso"> 
                     <a href="" class="entrena-curso-links"> <!--link al fomrulario de google de cada curso-->
-                        <img src="https://placeimg.com/300/300/people" alt="">
-                        <h4>Curso 3</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam non quibusdam, sunt enim distinctio quia.</p>
+                        <img src="https://placeimg.com/300/300/people" alt="" class="entrena-curso-imagen">
+                        <h4>Curso de improvisación teatral</h4>
+                        <p>¿Qué es la impro? <br>
+                            Es un género teatral con la particularidad que no utiliza libreto, por lo tanto los actores crean, actúan y dirigen sus propias historias saltando al vacío de lo desconocido. 
+                        </p>
                         <p class="quiero-participar">Quiero participar</p>
                     </a>
                 </div>
@@ -77,30 +95,48 @@
         </section>
         <section id="capacitaciones-empresariales" class="capacitaciones-empresariales">
             <h3 class="titulo-seccion">Capacitaciones Empresariales</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut suscipit vitae neque iusto recusandae nisi nemo perspiciatis consequatur dignissimos! Autem rem eveniet quasi adipisci, est molestias deserunt velit repellat sunt quae laborum modi officiis. Totam consequuntur saepe veritatis possimus voluptates voluptate eos deserunt iste odio vel accusantium, repudiandae perspiciatis minus.</p>
-            <p>imagenes de las empresas que ya se capacitaron, dependiendo la cantidad, podría también ser un Carrousel</p>
+            <p>Como entendemos que cada organización es única nuestras capacitaciones se adaptan a las necesidades que el cliente nos plantea.
+                Trabajamos Desarrollo creativo, nuevas ideas para resolver problemas actuales, generación de ideas, escucha activa, trabajo en equipo, storytelling.
+            </p>
+            <p>Durante el 2020 capacitamos a más de 1000 personas, de toda Hispanoamérica. Algunas de las empresas con las que trabajamos son: Medifé, Malba, Club de Amigos, Cerebro Curioso, Ruta Ideas con Destino, PYVL Comunicación, Spivacow Estudio Jurídico.
+                Sabemos que cada organización tiene realidades distintas por eso diseñamos cada capacitación de forma personalizada. Nuestro objetivo es que ustedes cumplan el suyo.
+            </p>
+            <div class="capacitaciones-empresariales-logos">
+                <div class="logo-empresa"><img src="https://placeimg.com/100/50/tech/grayscale" alt="logo-empresa"></div>
+                <div class="logo-empresa"><img src="https://placeimg.com/100/50/tech/grayscale" alt="logo-empresa"></div>
+                <div class="logo-empresa"><img src="https://placeimg.com/100/50/tech/grayscale" alt="logo-empresa"></div>
+                <div class="logo-empresa"><img src="https://placeimg.com/100/50/tech/grayscale" alt="logo-empresa"></div>
+                <div class="logo-empresa"><img src="https://placeimg.com/100/50/tech/grayscale" alt="logo-empresa"></div>
+                <div class="logo-empresa"><img src="https://placeimg.com/100/50/tech/grayscale" alt="logo-empresa"></div>
+                <div class="logo-empresa"><img src="https://placeimg.com/100/50/tech/grayscale" alt="logo-empresa"></div>
+                <div class="logo-empresa"><img src="https://placeimg.com/100/50/tech/grayscale" alt="logo-empresa"></div>
+                <div class="logo-empresa"><img src="https://placeimg.com/100/50/tech/grayscale" alt="logo-empresa"></div>
+                <div class="logo-empresa"><img src="https://placeimg.com/100/50/tech/grayscale" alt="logo-empresa"></div>
+            </div>
         </section>
         <section id="chateamos" class="chateamos">
             <h3 class="titulo-seccion">¡Chateamos!</h3>
             <form action="index.html" method="post">
-                <div class="form">
-                    <div class="chateamos-campos">
-                        <input class="chateamos-input" type="text" name="name" id="name" placeholder="Nombre">
-                        <input class="chateamos-input" type="tel" name="cell" id="cell" placeholder="Celular">
-                        <input class="chateamos-input" type="email" name="email" id="email" placeholder="E-mail">
+                <div class="form-y-boton">
+                    <div class="form">
+                        <div class="chateamos-campos">
+                            <input class="chateamos-input" type="text" name="name" id="name" placeholder="Nombre">
+                            <input class="chateamos-input" type="tel" name="cell" id="cell" placeholder="Celular">
+                            <input class="chateamos-input" type="email" name="email" id="email" placeholder="E-mail">
+                        </div>
+                        <div class="chateamos-campos">
+                            <textarea class="chateamos-input" name="message" id="chateamos-message" cols="30" rows="6" placeholder="Mensaje..."></textarea>
+                        </div>
                     </div>
-                    <div class="chateamos-campos">
-                        <textarea class="chateamos-input" name="message" id="chateamos-message" cols="30" rows="6" placeholder="Mensaje..."></textarea>
-                        <input type="submit" value="Enviar" class="chateamos-boton">
-                    </div>
+                    <input type="submit" value="Enviar" class="chateamos-boton">
                 </div>
             </form>
         </section>
     </main>
     <footer>
         <div class="footer">
-            <a href="https://www.instagram.com/gymcreativo/" class="footer-links"><i class="fab fa-instagram"></i></a>
-            <a href="" class="footer-links"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/gymcreativo/" class="footer-links" target="blanck"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="https://wa.me/5491160186557" class="footer-links" target="blanck"><i class="fab fa-whatsapp fa-lg"></i></a>
         </div>
     </footer>
 </body>
