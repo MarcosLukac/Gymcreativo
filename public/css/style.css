@@ -15,6 +15,7 @@
 }
 .encabezado-logo-imagen {
     width: 50%;
+    max-width: 220px;
 }
 .encabezado-navbar {
     color: #ea9423;
@@ -31,6 +32,9 @@
 input#menu {
     display: none;
 }
+.menu-icon {
+    padding: 15px;
+}
 .collapsible-menu-list li {
     list-style-type: none;
     text-align: center;
@@ -44,7 +48,7 @@ input#menu {
 }
 .menu-list-links {
     color: #ffffff;
-    padding: 3px;
+    padding: 10px 3px;
 }
 /* fin diseño encabezado */
 
@@ -63,12 +67,14 @@ input#menu {
     display: inline-block;
     margin-top: 20px;
     padding: 5px;    
+}
+.gym-creativo-santiago {
     text-align: center;
     background-color: #22418a;
     color: #ffffff;
+    padding: 5px 0px
 }
 .gym-creativo-texto {
-    margin-left: 20px;
     text-align: justify;
 }
 .titulo-seccion {
@@ -81,13 +87,14 @@ input#menu {
 /* diseño creatividad */
 .creatividad {
     background-color: #ea9423;
-    color: #ffffff;
-    padding: 10px;
+    color: #22418a;
+    padding: 10px 20px;
     width: 80%;
     margin: auto;
     border-radius: 10px;
     margin-top: 10px;
     text-align: center;
+    /* background-image: radial-gradient(#ea9423, #ffffff); */
 }
 /* fin creatividad  */
 
@@ -95,6 +102,7 @@ input#menu {
 .entrena-con-nosotros {
     width: 90%;
     margin: auto;
+    text-align: justify;
 }
 .entrena-cursos {
     display: flex;
@@ -115,6 +123,7 @@ input#menu {
 }
 .entrena-curso-imagen {
     margin-top: 10px;
+    display: none;
 }
 .entrena-curso-links {
     text-decoration: none;
@@ -161,8 +170,8 @@ input {
     border: solid 2px #22418a;
     border-radius: 5px;
     background-color: #ffffff;
-    
     margin: 6px;
+    width: 240px;
 }
 .chateamos-campos {
     display: flex;
@@ -173,7 +182,7 @@ input {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    
 }
 .chateamos-boton {
     padding: 2px;
@@ -208,21 +217,22 @@ input {
 /* Desktop version */
 
 
-@media (min-width: 650px) {
+@media (min-width: 900px) {
     /* diseño del encabezado */
     .encabezado {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: stretch;
         align-content: space-between;
         flex-wrap: wrap;
     }
     .encabezado-div {
         max-width: 1366px;
+        display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: stretch;
-        justify-content: center;
+        justify-content: space-between;
     }
     .encabezado-logo {
         width: 30%;
@@ -234,6 +244,7 @@ input {
     .encabezado-logo-imagen {
         width: 100%;
         min-width: 200px;
+        max-width: 400px;
     }   
     .collapsible-menu-list {
         display: flex;
@@ -242,6 +253,9 @@ input {
     }
     .menu-list-links {
         padding: 20px;
+    }
+    .menu-list-links:hover {
+        color: #ea9423;
     }
     .navbar-collapsible-menu {
         max-height: 100%;
@@ -269,6 +283,7 @@ input {
     .gym-creativo-texto {
         align-self: flex-start;
         flex-grow: 2;
+        margin-left: 20px;
     }
     /* .gym-creativo-imagen {
         width: 39%;
@@ -276,9 +291,7 @@ input {
     /* fin diseño gym creativo */
 
     /* diseño entrena con nosotros  */
-    .entrena-con-nosotros {
-        max-width: 1366px;
-    }
+    
     .entrena-cursos {
         flex-direction: row;
         flex-wrap: wrap;
@@ -287,12 +300,13 @@ input {
         max-width: 400px;
         margin: 10px;
     }
+    .entrena-curso-imagen {
+        display: inline-block;
+    }
     /* fin entrena  */
 
     /* diseño capacitaciones empresariales  */
-    .capacitaciones-empresariales {
-        max-width: 1366px;
-    }
+    
     /* fin capacitaciones empresariales */
 
     /* diseño chateamos  */
@@ -301,11 +315,13 @@ input {
         justify-content: center;
         align-items: flex-start;
     }
-    .chateamos {
-        max-width: 1366px;
-    }
+    
     .chateamos-campos {
         align-items: flex-start;
+    }
+    .chateamos-input {
+        width: 300px;
+
     }
     /* fin chateamos */
 
