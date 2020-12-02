@@ -66,13 +66,14 @@ input#menu {
 .gym-creativo-imagen {
     display: inline-block;
     margin-top: 20px;
-    padding: 5px;    
+    order: 2;    
 }
 .gym-creativo-santiago {
     text-align: center;
     background-color: #22418a;
     color: #ffffff;
-    padding: 5px 0px
+    padding: 5px 0px;
+    margin: 0;
 }
 .gym-creativo-texto {
     text-align: justify;
@@ -110,21 +111,18 @@ input#menu {
     justify-content: center;
 }
 .entrena-curso {
-    background-color: #ffffff;
-    border: solid 5px #22418a;
-    border-radius: 10px;
+    background-color: #ea9423;
     text-align: center;
     width: 90%;
     margin: auto;
     margin-bottom: 10px;
 }
-.entrena-curso:hover {
-    border: solid 5px #ea9423;
-}
-.entrena-curso-imagen {
-    margin-top: 10px;
+ .curso-explicación {
     display: none;
 }
+/*.entrena-curso:hover  .curso-explicación{
+    display: inline-block;
+} */
 .entrena-curso-links {
     text-decoration: none;
     color: #22418a;
@@ -285,9 +283,9 @@ input {
         flex-grow: 2;
         margin-left: 20px;
     }
-    /* .gym-creativo-imagen {
-        width: 39%;
-    } */
+    .gym-creativo-imagen {
+        order: -1;
+    }
     /* fin diseño gym creativo */
 
     /* diseño entrena con nosotros  */
@@ -297,7 +295,7 @@ input {
         flex-wrap: wrap;
     }
     .entrena-curso {
-        max-width: 400px;
+        max-width: 200px;
         margin: 10px;
     }
     .entrena-curso-imagen {
