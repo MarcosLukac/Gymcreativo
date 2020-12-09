@@ -1,13 +1,50 @@
 /* Mobile first */
+@font-face {
+    font-family: Subscriber;
+    src: url("../design/Fonts_Lato/SUBSCRIBER-Regular.otf") format("opentype");
+}
+
 
 * {
     font-family: 'Lato', sans-serif;
 }
 
+.titulos {
+    font-family: 'Subscriber', sans-serif;
+    font-size: 4em;
+    font-weight: lighter;
+    color: #234487;
+    margin: 0;
+}
+
+.blue-text {
+    color: #234487;
+}
+.white-text {
+    color: #ffffff;
+}
+
+#sobre-mi{
+    background-image: url(../design/santi-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.sobre-mi-texto{
+    color: #ffffff;
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+}
+.orange-text {
+    color: #ea9423;
+}
 /* diseño del encabezado */
 .encabezado {
     text-align: center;
-    background-color: #22418a;
+    background-color: #ffffff;
 }
 .encabezado-div {
     display: flex;
@@ -47,14 +84,15 @@ input#menu {
     padding-inline-start: 0%;
 }
 .menu-list-links {
-    color: #ffffff;
+    color: #22418a;
+    font-weight: bold;
     padding: 10px 3px;
 }
 /* fin diseño encabezado */
 
 /* Diseño de ña sección GymCreativo */
 .gym-creativo {
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 .gym-creativo-div {
@@ -65,9 +103,15 @@ input#menu {
 }
 .gym-creativo-imagen {
     display: inline-block;
-    margin-top: 20px;
-    padding: 5px;    
+    margin: 20px;
+    padding: 10px;    
 }
+
+.lightbulb {
+    width: 100%;
+    max-width: 200px;
+}
+
 .gym-creativo-santiago {
     text-align: center;
     background-color: #22418a;
@@ -86,15 +130,40 @@ input#menu {
 
 /* diseño creatividad */
 .creatividad {
-    background-color: #ea9423;
-    color: #22418a;
-    padding: 10px 20px;
-    width: 80%;
+    background-color: #22418a;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    width: 100%;
     margin: auto;
-    border-radius: 10px;
-    margin-top: 10px;
     text-align: center;
+    padding-top: 20px;
+    
     /* background-image: radial-gradient(#ea9423, #ffffff); */
+}
+.card-slider{
+    width: 100%;
+    height: 430px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card {
+    height: 400px;
+    width: 250px;
+    border-radius: 20px;
+    margin: 10px 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    max-width: 200px;
 }
 /* fin creatividad  */
 
@@ -143,9 +212,13 @@ input#menu {
 
 /* diseño capacitaciones empresariales  */
 .capacitaciones-empresariales {
-    width: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: auto;
-    text-align: justify;
+    text-align: center;
 }
 .capacitaciones-empresariales-logos {
     display: flex;
@@ -154,6 +227,18 @@ input#menu {
 }
 .logo-empresa {
     margin: 10px 15px;
+}
+#juntos {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#juntos ul li {
+    list-style-type: none;
+    text-align: left;
 }
 /* fin capacitaciones empresariales  */
 
@@ -212,8 +297,6 @@ input {
 }
 /* fin footer  */
 
-
-
 /* Desktop version */
 
 
@@ -254,36 +337,54 @@ input {
     .menu-list-links {
         padding: 20px;
     }
+    
     .menu-list-links:hover {
         color: #ea9423;
     }
     .navbar-collapsible-menu {
         max-height: 100%;
     }
+    .lightbulb {
+        width: 100%;
+        max-width: 400px;
+    }
     .fa-bars {
         display: none;
     }
     /* fin diseño encabezado*/ 
     .main {
+        width: 80%;
+        margin: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     /*diseño sección gym creativo */
     .gym-creativo {
-        width: 90%;
+        width: 100%;
         margin: auto;
+        padding: 50px;
     }
     .gym-creativo-div {
+        display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: stretch;
         justify-content: space-between;
+        align-items: center;
     }
     .gym-creativo-texto {
         align-self: flex-start;
-        flex-grow: 2;
-        margin-left: 20px;
+        flex-grow: 3;
+        margin: 50px;
+    }
+    #sobre-mi{
+        display: flex;
+        flex-direction: column;
+        background-image: url(../design/santi.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
     }
     /* .gym-creativo-imagen {
         width: 39%;
@@ -327,4 +428,33 @@ input {
 
     /* diseño footer  */
     /* fin footer  */
+    .card-slider{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card {
+        height: 300px;
+        width: 200px;
+        border-radius: 20px;
+        margin: 10px 15px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card img {
+        max-width: 200px;
+    }
+    
+    .card-text {
+    }
+
+    .waves {
+        display: block;
+    }
 }
+
