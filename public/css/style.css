@@ -216,6 +216,7 @@ input#menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 .logo-empresa {
     margin: 10px 15px;
@@ -241,21 +242,12 @@ input#menu {
 .chateamos {
     width: 100%;
     margin: auto;
+    background-color: #ea9423;
 }
 input {
     border:none;
 }
-.charlemos-titulo {
-    color: #ffffff;
 
-}
-.chateamos-input {
-    padding: 2px;
-    border-radius: 5px;
-    background-color: #ffffff;
-    margin: 6px;
-    width: 240px;
-}
 .chateamos-campos {
     display: flex;
     flex-direction: column;
@@ -264,27 +256,53 @@ input {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     
 }
 .chateamos-boton {
-    padding: 2px;
-    border: solid 2px #22418a;
-    border-radius: 5px;
+    width: 80px;
+    height: 80px;
+    display: block;
+    border: none;
+    font-family: 'Subscriber', sans-serif;
+    font-size: 1.6rem;
+    border-radius: 100%;
     background-color: #ffffff;
-    width: fit-content;
-    margin: 5px;
-    align-self: flex-end;
+}
+.redes {
+    width: 49%;
+    font-size: 20px;
 }
 .form-y-boton {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    margin: 0.6em 0;
 }
 .chateamos-contenido {
     background-color: #ea9423;
     color: #ffffff;
+    width: 80%;
+    margin: auto;
 }
+
+
+.chateamos-input {
+    display: block;
+    padding: 3px 0 3px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    margin: 0.5em 0;
+    width: 400px;
+    height: 30px;
+}
+
+#chateamos-message {
+    height: 120px;
+    padding: 10px 0 3px 10px;
+}
+
 ::placeholder {
     color: #22418a;
     opacity: 1;
@@ -298,7 +316,8 @@ input {
 }
 .charlemos {
     display: flex;
-    
+    flex-direction: column;
+
 }
 /* fin chateamos */
 
@@ -438,10 +457,7 @@ input {
     .chateamos-campos {
         align-items: flex-start;
     }
-    .chateamos-input {
-        width: 300px;
-
-    }
+    
     /* fin chateamos */
 
     /* diseño footer  */
@@ -473,6 +489,11 @@ input {
 
     .waves {
         display: block;
+    }
+
+    .charlemos {
+        display: flex;
+        flex-direction: row;
     }
 }
 
