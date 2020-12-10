@@ -4,6 +4,7 @@
     src: url("../design/Fonts_Lato/SUBSCRIBER-Regular.otf") format("opentype");
 }
 body {
+    width: 99%;
     margin: 0;
 }
 
@@ -122,7 +123,7 @@ input#menu {
     margin: 0;
 }
 .gym-creativo-texto {
-    text-align: justify;
+    text-align: center;
 }
 /* fin diseño gym creativo  */
 
@@ -213,6 +214,7 @@ input#menu {
     text-align: center;
 }
 .capacitaciones-empresariales-logos {
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -260,24 +262,25 @@ input {
     
 }
 .chateamos-boton {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     display: block;
     border: none;
     font-family: 'Subscriber', sans-serif;
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     border-radius: 100%;
     background-color: #ffffff;
 }
 .redes {
-    width: 49%;
-    font-size: 20px;
+    width: 100%;
+    font-size: 25px;
 }
 .form-y-boton {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0.6em 0;
+    width: 100%;
 }
 .chateamos-contenido {
     background-color: #ea9423;
@@ -289,18 +292,19 @@ input {
 
 .chateamos-input {
     display: block;
-    padding: 3px 0 3px 10px;
+    padding: 5px 0 5px 20px;
     border: none;
     border-radius: 20px;
     background-color: #ffffff;
     margin: 0.5em 0;
-    width: 400px;
-    height: 30px;
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
 }
 
 #chateamos-message {
     height: 120px;
-    padding: 10px 0 3px 10px;
+    padding: 20px 0 5px 20px;
 }
 
 ::placeholder {
@@ -334,6 +338,26 @@ input {
 }
 /* fin footer  */
 
+#back-to-top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #ea9423; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 100%; /* Rounded corners */
+    font-size: 18px;
+    font-family: 'Subscriber', sans-serif;
+    font-size: 25px;
+    width: 90px;
+    height: 90px;
+    color: #ffffff;
+}
 /* Desktop version */
 
 
@@ -342,17 +366,16 @@ input {
     .encabezado {
         display: flex;
         justify-content: center;
-        align-items: stretch;
-        align-content: space-between;
+        align-items: center;
         flex-wrap: wrap;
     }
     .encabezado-div {
-        max-width: 1366px;
+        width: 95%;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        align-items: stretch;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
     }
     .encabezado-logo {
         width: 30%;
@@ -360,6 +383,7 @@ input {
     }
     .encabezado-navbar {
         align-self: center;
+        width: 69%;
     }
     .encabezado-logo-imagen {
         width: 100%;
@@ -370,6 +394,7 @@ input {
         display: flex;
         align-items: center;
         align-content: center;
+        justify-content: space-between;
     }
     .menu-list-links {
         padding: 20px;
@@ -380,6 +405,7 @@ input {
     }
     .navbar-collapsible-menu {
         max-height: 100%;
+        width: 80%;
     }
     .lightbulb {
         width: 100%;
@@ -390,7 +416,7 @@ input {
     }
     /* fin diseño encabezado*/ 
     .main {
-        width: 90%;
+        width: 100%;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -409,11 +435,14 @@ input {
         align-items: stretch;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
     }
     .gym-creativo-texto {
         align-self: flex-start;
         flex-grow: 3;
         margin: 50px;
+        width: 50%;
+        text-align: left;
     }
     #sobre-mi{
         display: flex;
@@ -425,6 +454,9 @@ input {
     }
     .gym-creativo-imagen {
         order: -1;
+        width: 30%;
+        display: flex;
+        justify-content: center;
     }
     /* fin diseño gym creativo */
 
@@ -463,7 +495,7 @@ input {
     /* diseño footer  */
     /* fin footer  */
     .card-slider{
-        width: 100%;
+        width: 90%;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -494,6 +526,20 @@ input {
     .charlemos {
         display: flex;
         flex-direction: row;
+    }
+    .redes {
+        width: 49%;
+        font-size: 25px;
+    }
+    .form-y-boton {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0.6em 0;
+        width: 80%;
+    }
+    ..gym-creativo-texto{
+        text-align: left;
     }
 }
 
