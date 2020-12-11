@@ -9,9 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="../public/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.1/owl.carousel.min.js"></script>
     <script>
         $(document).ready(function(){
         $(".owl-carousel").owlCarousel();
@@ -80,36 +79,36 @@
                 <p><b>¡Encuentra el curso que mejor se adapte a tus metas!</b></p>
             </div>
             <div class="card-slider owl-carousel">
-                <div class="card">
+                <div class="card item">
                     <img src="../public/images/fondocursos.png">
                     <div class="card-text">
                         <p><b>Desarrolla tu creatividad<br>Etapa 1</b></p>
                         <p>Duración: 4 clases<br>Online en vivo<br>Cupos limitados</p>
-                        <button class="quiero-saber-mas">¡QUIERO SABER MÁS!</button>
+                        <button class="quiero-saber-mas trigger" data-toggle="modal" data-target="#modal-1" id="openmodal1">¡QUIERO SABER MÁS!</button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card item">
                     <img src="../public/images/fondocursos.png">
                     <div class="card-text">
                         <p><b>Mentorías<br>&nbsp;</b></p>
                         <p>Duración: 4/8 encuentros<br>Online en vivo<br>Personalizado</p>
-                        <button class="quiero-saber-mas">¡QUIERO SABER MÁS!</button>
+                        <button class="quiero-saber-mas trigger" data-toggle="modal" data-target="#modal-2">¡QUIERO SABER MÁS!</button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card item">
                     <img src="../public/images/fondocursos.png">
                     <div class="card-text">
                         <p><b>Aprende a Improvisar<br>&nbsp;</b></p>
                         <p>Duración: 12 clases<br>Online en vivo<br>Cupos limitados</p>
-                        <button class="quiero-saber-mas">¡QUIERO SABER MÁS!</button>
+                        <button class="quiero-saber-mas trigger" data-toggle="modal" data-target="#modal-3">¡QUIERO SABER MÁS!</button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card item">
                     <img src="../public/images/fondocursos.png">
                     <div class="card-text">
                         <p><b>Workshop para<br>emprendedores</b></p>
                         <p>Duración: 1 clase<br>Online en vivo<br>&nbsp;</p>
-                        <button class="quiero-saber-mas">¡QUIERO SABER MÁS!</button>
+                        <button class="quiero-saber-mas trigger" data-toggle="modal" data-target="#modal-4">¡QUIERO SABER MÁS!</button>
                     </div>
                 </div>
             </div>
@@ -174,30 +173,80 @@
         
     </main>
 
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+    </div>
+
     <button onclick="topFunction()" id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i><br>Subir</button>
 
     <script src="jquery.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
     <script>
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:5
-                }
-            }
-        })
+        // Get each modal and close button
+        const triggers = document.getElementsByClassName("trigger");
+        const triggerArray = Array.from(triggers).entries();
+        const modals = document.getElementsByClassName("modal");
+        const closeButtons = document.getElementsByClassName("close");
 
-        
+        // Then use `for...of`-loop with the index of each item in `triggerArray` for listening to a click event which toggles each modal to open and close
+        for (let [index, trigger] of triggerArray) {
+        let triggerIndex = index;
+        function toggleModal() {
+            // Optionally toggle a class for CSS animations
+            modals[triggerIndex].classList.toggle("show-modal");
+        }
+        trigger.addEventListener("click", toggleModal);
+        closeButtons[triggerIndex].addEventListener("click", toggleModal);
+        }
     </script>
+    <script>
+		$('#customers-teams').owlCarousel({
+		            loop: true,
+		            center: true,
+		            items: 8,
+		            margin: 0,
+		            autoplay: true,
+		            dots:true,
+		            autoplayTimeout: 4500,
+							  checkVisibility: true,
+		            responsive: {
+		              0: {
+		                items: 1
+		              },
+		              768: {
+		                items: 2
+		              },
+		              1170: {
+		                items: 3
+		              }
+		            }
+		        });
+
+	</script>
     <script>
         mybutton = document.getElementById("back-to-top");
 
