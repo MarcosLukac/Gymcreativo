@@ -17,12 +17,12 @@ body {
     font-family: 'Subscriber', sans-serif;
     font-size: 4em;
     font-weight: lighter;
-    color: #234487;
+    color: #22418a;
     margin: 0;
 }
 
 .blue-text {
-    color: #234487;
+    color: #22418a;
 }
 .white-text {
     color: #ffffff;
@@ -192,7 +192,7 @@ input#menu {
     color: #22418a;
 }
 .quiero-saber-mas {
-    background-color: #234487;
+    background-color: #22418a;
     border: solid 2px #ffffff;
     color: #ffffff;
     padding: 5px;
@@ -201,7 +201,7 @@ input#menu {
 
 .quiero-saber-mas:hover {
     background-color: #ffffff;
-    color: #234487;
+    color: #22418a;
 }
 /* fin entrena con nosotros  */
 
@@ -409,17 +409,68 @@ input {
   .modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
+    /* padding: 20px; */
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
   }
-  
+  .modal-titulo {
+      text-align: center;
+      padding: 20px;
+  }
+  .curso-imagen {
+      width: 50%;
+  }
+  .modal-content-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+  }
+  .modal-content-descripcion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .clases {
+      display: flex;
+      flex-direction: column;
+      align-items:flex-start;
+  }
+  .modal-content-descripcion {
+      color: #22418a;
+  }
+  .modal-quiero-inscribirme {
+      color: #ffffff;
+      background-color: #22418a;
+      padding: 5px;
+      border-radius: 5px;
+      width: fit-content;
+  }
+  .modal-quiero-inscribirme a {
+      text-decoration: none;
+      color: #ffffff;
+  }
+  .clases-programa {
+      color: #ea9423;
+  }
+  .clases-descripción {
+      color: #ea9423;
+  }
+  .experiencia-participantes {
+      display: none;
+      background-color: #22418a;
+  }
+  .div-experiencia {
+      background-color: #22418a;
+  }
   /* The Close Button */
   .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    margin-top:20px;
+    margin-right: 20px;
   }
   
   .close:hover,
@@ -428,6 +479,8 @@ input {
     text-decoration: none;
     cursor: pointer;
   }
+
+
 /* Desktop version */
 
 @media (min-width: 900px) {
@@ -626,6 +679,24 @@ input {
         text-align: left;
     }
 
-    
+    /* diseño modales  */
+    .modal-content-descripcion {
+        flex-direction: row;
+    }
+    .curso-imagen {
+        width: 30%;
+        margin: 20px;
+    }
+    .clases {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .clases-descripción {
+        width: 50%;
+    }
+
+
+    /* fin modales  */
 }
 
