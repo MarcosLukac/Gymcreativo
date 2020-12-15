@@ -408,9 +408,13 @@ input {
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    /* padding: 20px; */
-    border: 1px solid #888;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    margin: auto;
+    border: none;
+    border-radius: 30px;
+    
     width: 80%; /* Could be more or less, depending on screen size */
   }
   .modal-titulo {
@@ -418,7 +422,8 @@ input {
       padding: 20px;
   }
   .curso-imagen {
-      width: 50%;
+      width: 30%;
+      max-width: 200px;
   }
   .modal-content-info {
       display: flex;
@@ -457,11 +462,28 @@ input {
       color: #ea9423;
   }
   .experiencia-participantes {
-      display: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       background-color: #22418a;
+      padding-bottom: 50px;
+      color: #ffffff;
+  }
+  .modal-feedback {
+      display: flex;
+      flex-direction: row;
+  }
+  .feedback {
+      margin: 10px;
+      padding: 5px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      color: #ea9423;
   }
   .div-experiencia {
       background-color: #22418a;
+      border-radius: 0 0 30px 30px;
   }
   /* The Close Button */
   .close {
