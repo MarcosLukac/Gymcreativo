@@ -409,7 +409,7 @@ input {
 #whatsapp {
     display: block; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 10%; /* Place the button at the bottom of the page */
+    bottom: 15%; /* Place the button at the bottom of the page */
     left: 80%; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
@@ -502,8 +502,18 @@ input {
       flex-direction: column;
       align-items: center;
   }
+  .etapas {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+.etapas-programa {
+    color: #ea9423;
+    display: none;
+}
   .clases {
-      display: flex;
+      /* display: flex; */
+      display: none;
       flex-direction: column;
       align-items:flex-start;
   }
@@ -523,6 +533,7 @@ input {
   }
   .clases-programa {
       color: #ea9423;
+      display: none;
   }
   .clases-descripción {
       color: #ea9423;
@@ -793,8 +804,13 @@ input {
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    .etapas {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
     .clases-descripción {
-        width: 50%;
+        width: 75%;
     }
 
     #content-wip{

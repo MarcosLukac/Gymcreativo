@@ -81,9 +81,11 @@
                 <div class="card item">
                     <img src="../public/images/fondocursos.png">
                     <div class="card-text">
-                        <p><b>Desarrolla tu creatividad<br>Etapa 1</b></p>
+                        <p><b>Curso de Desarrollo Creativo</b></p>
                         <p>Duración: 4 clases<br>Online en vivo<br>Cupos limitados</p>
-                        <button onclick="document.getElementById('modal1').style.display='block'" class="quiero-saber-mas trigger" data-toggle="modal" data-target="#modal-1" id="openmodal1">¡QUIERO SABER MÁS!</button>
+                        <button onclick="document.getElementById('modal1').style.display='block'; 
+                        document.getElementById('back-to-top').style.display='none'; 
+                        document.getElementById('whatsapp').style.display='none'" class="quiero-saber-mas trigger" data-toggle="modal" data-target="#modal-1" id="openmodal1">¡QUIERO SABER MÁS!</button>
                     </div>
                 </div>
                 <div class="card item">
@@ -91,15 +93,19 @@
                     <div class="card-text">
                         <p><b>Mentorías<br>&nbsp;</b></p>
                         <p>Duración: 4/8 encuentros<br>Online en vivo<br>Personalizado</p>
-                        <button onclick="document.getElementById('modal2').style.display='block'" class="quiero-saber-mas trigger" data-toggle="modal" data-target="#modal-2">¡QUIERO SABER MÁS!</button>
+                        <button onclick="document.getElementById('modal2').style.display='block'; 
+                        document.getElementById('back-to-top').style.display='none'; 
+                        document.getElementById('whatsapp').style.display='none'" class="quiero-saber-mas trigger" data-toggle="modal" data-target="#modal-2">¡QUIERO SABER MÁS!</button>
                     </div>
                 </div>
                 <div class="card item">
                     <img src="../public/images/fondocursos.png">
                     <div class="card-text">
-                        <p><b>Aprende a Improvisar<br>&nbsp;</b></p>
+                        <p><b>Improvisación Teatral<br>&nbsp;</b></p>
                         <p>Duración: 12 clases<br>Online en vivo<br>Cupos limitados</p>
-                        <button onclick="document.getElementById('modal3').style.display='block'" class="quiero-saber-mas trigger" data-toggle="modal" data-target="#modal-3">¡QUIERO SABER MÁS!</button>
+                        <button onclick="document.getElementById('modal3').style.display='block'; 
+                        document.getElementById('back-to-top').style.display='none'; 
+                        document.getElementById('whatsapp').style.display='none'" class="quiero-saber-mas trigger" data-toggle="modal" data-target="#modal-3">¡QUIERO SABER MÁS!</button>
                     </div>
                 </div>
                 <div class="card item">
@@ -107,7 +113,9 @@
                     <div class="card-text">
                         <p><b>Workshop para<br>emprendedores</b></p>
                         <p>Duración: 1 clase<br>Online en vivo<br>&nbsp;</p>
-                        <button onclick="document.getElementById('modal4').style.display='block'" class="quiero-saber-mas trigger" data-toggle="modal" data-target="#modal-4">¡QUIERO SABER MÁS!</button>
+                        <button onclick="document.getElementById('modal4').style.display='block'; 
+                        document.getElementById('back-to-top').style.display='none'; 
+                        document.getElementById('whatsapp').style.display='none'" class="quiero-saber-mas trigger" data-toggle="modal" data-target="#modal-4">¡QUIERO SABER MÁS!</button>
                     </div>
                 </div>
             </div>
@@ -146,7 +154,11 @@
                 <div class="logo-empresa"><img src="../public/images/EMPRESAS_RUTA.png" alt="logo-empresa"></div>
                 <div class="logo-empresa"><img src="../public/images/EMPRESAS_SI.png" alt="logo-empresa"></div>
             </div>
-            <svg xmlns="../public/images/wave.svg" viewBox="0 0 1440 320"><path fill="#ea9423" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,154.7C384,160,480,224,576,218.7C672,213,768,139,864,128C960,117,1056,171,1152,197.3C1248,224,1344,224,1392,224L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+            <svg xmlns="../public/images/wave.svg" viewBox="0 0 1440 320">
+                <path fill="#ea9423" fill-opacity="1" 
+                d="M0,256L48,229.3C96,203,192,149,288,154.7C384,160,480,224,576,218.7C672,213,768,139,864,128C960,117,1056,171,1152,197.3C1248,224,1344,224,1392,224L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
         </section>
         <section id="chateamos" class="chateamos">
 
@@ -176,7 +188,9 @@
 
     <div id="modal1" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="document.getElementById('modal1').style.display='none'" class="close">&times;</span>
+            <span class="close" onclick="document.getElementById('modal1').style.display='none'; 
+            document.getElementById('back-to-top').style.display='initial'; 
+            document.getElementById('whatsapp').style.display='initial'" class="close">&times;</span>
             <!-- <div class="modal-titulo">
                 <h2 class="titulos" style="color: #22418a;">Cursos y talleres</h2>
             </div> -->
@@ -184,31 +198,33 @@
                 <div class="modal-content-descripcion">
                     <img class='curso-imagen' src="../public/images/fondocursos.png" alt="">
                     <div>
-                        <h2>Desarrolla tu creatividad <br> Etapa 1</h2>
-                        <p>Introducción a la creatividad con ejercicios para dejar de criticar mis ideas, evitar el NO y encontrar nuevos puntos de vista</p>
+                        <h2>Curso de Desarrollo Creativo</h2>
+                        <p>Los cursos son 90% practica 10% teoría. 
+                            De forma divertida y dinámica realizamos ejercicios (orales, físicos o escritos) para estimular nuestra neuroplasticidad, 
+                            generar nuevas conexiones neuronales y desarrollar la creatividad para poder resolver nuestros problemas de formas diferentes. 
+                            Evadir los baches creativos, tener más ideas y poder ver nuestra problemática desde distintos puntos de vista.</p>
                         <p>Duración: 4 clases de 1:30hs <br>
                         Online en vivo <br>
                         Clases de hasta 12 participantes</p>
-                        <div class="modal-quiero-inscribirme"><a href="">¡QUIERO INSCRIBIRME!</a></div>
+                        <div class="modal-quiero-inscribirme">
+                            <a href="https://wa.me/5491160186557?text=Hola,%20quiero%20inscribirme%20en%20el%20curso%20de%20Desarrolla%20tu%20creatividad!!" 
+                            target="blanck">¡QUIERO INSCRIBIRME!</a>
+                        </div>
                     </div>
                 </div>
-                <div class="clases-programa"><h3>Programa</h3></div>
-                <div class="clases">
+                <div class="etapas-programa"><h3>Programa</h3></div>
+                <div class="etapas">
                     <div class="clases-descripción">
-                        <h5>Clase 1:</h5>
-                        <p>Descripción de la clase</p>
+                        <h5>Etapa 1:</h5>
+                        <p>Introducción a la creatividad con ejercicios para dejar de criticar mis ideas, evitar el NO y encontrar nuevos puntos de vista. Duración 4 clases.</p>
                     </div>
                     <div class="clases-descripción">
-                        <h5>Clase 2:</h5>
-                        <p>Descripción de la clase</p>
+                        <h5>Etapa 2:</h5>
+                        <p>Profundizamos conceptos para romper los esquemas mentales y la lógica. Flexibilidad mental. Trabajamos la creatividad en equipo. Duración 4 clases.</p>
                     </div>
                     <div class="clases-descripción">
-                        <h5>Clase 3:</h5>
-                        <p>Descripción de la clase</p>
-                    </div>
-                    <div class="clases-descripción">
-                        <h5>Clase 4:</h5>
-                        <p>Descripción de la clase</p>
+                        <h5>Etapa 3:</h5>
+                        <p>Entrenamiento extensivo de creatividad. Soltar la imaginación para la creación de historias a partir de la improvisación. Duración 4 clases</p>
                     </div>
                 </div>
             </div>
@@ -219,18 +235,53 @@
                     <div class="modal-feedback">
                         <div class="feedback">
                             <img src="" alt="">
-                            <h4>Nombre</h4>
-                            <p>Comentarios de la persona</p>
+                            <h4>Alex Casas Publicista- Bs As, Argentina</h4>
+                            <p>“GymCreativo es una experiencia interesantísima! 
+                                Los ejercicios que propone Santi son muy divertidos, 
+                                son muy útil para literalmente ejercitar un 
+                                poco la mente y agilizar la fluidez de ideas.”</p>
                         </div>
                         <div class="feedback">
                             <img src="" alt="">
-                            <h4>Nombre</h4>
-                            <p>Comentarios de la persona</p>
+                            <h4>Silvina Izquierdo Porfesora- Bs As, Argentina</h4>
+                            <p>“En GymCreativo encontré un espacio para entrenar 
+                                mi creatividad y además de disfrutarlo de la mejor 
+                                manera (jugando y aprendiendo rodeada de un gran 
+                                grupo humano) lidera las cosas positivas de mi 
+                                lista de este 2020</p>
                         </div>
                         <div class="feedback">
                             <img src="" alt="">
-                            <h4>Nombre</h4>
-                            <p>Comentarios de la persona</p>
+                            <h4>Mairel Bermudez, Periodista y locutora, Panamá</h4>
+                            <p>Retó mis habilidades, ejercité la mente para quitar 
+                                barreras o límites por la costumbre de hacer el 
+                                camino fácil.  Gracias al curso, he sentido que 
+                                ahora pienso más amplio las soluciones, consigo 
+                                más rutas para crear. Creció mi imaginación.</p>
+                        </div>
+                        <div class="feedback">
+                            <img src="" alt="">
+                            <h4>Laura Missy, Comediante y escritora, Madrid, España</h4>
+                            <p>"Probé una clase de muestra con Santi en el momento del 
+                                confinamiento en España. Me decidí a hacer uno de 
+                                cursos en el mes de Junio y la diferencia horaria no 
+                                iba a ser ningún impedimento (00:00). Eran las dos 
+                                horas más divertidas de la semana, aprendiendo a crear 
+                                y exprimir la mente, además de conocer gente del otro 
+                                lado del charco. Santi es un apasionado de la creatividad 
+                                y sabe cómo hacer que juguemos. Que no te lo cuenten,
+                                 no tienes nada que perder y mucho por ganar. ¿Repetimos?"</p>
+                        </div>
+                        <div class="feedback">
+                            <img src="" alt="">
+                            <h4>Juan Francisco Lukac, Ingeniero Civil, Bs As, Argentina</h4>
+                            <p>“El primer obstáculo de la creatividad son las propias 
+                                barreras internas en que pensamos que una idea es absurda, 
+                                irrealizable, etc. A lo largo de los ejercicios del curso 
+                                fui descubriendo que la creatividad es romper esas barreras,
+                                 y anotar todas las ideas en papel antes de pensar si es
+                                  buena o mala. Ninguna idea vuela si le cortamos
+                                   las alas antes de nacer."</p>
                         </div>
                     </div>
                 </div> 
@@ -240,7 +291,9 @@
 
     <div id="modal2" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="document.getElementById('modal2').style.display='none'">&times;</span>
+            <span class="close" onclick="document.getElementById('modal2').style.display='none'; 
+            document.getElementById('back-to-top').style.display='initial'; 
+            document.getElementById('whatsapp').style.display='initial'">&times;</span>
             <!-- <div class="modal-titulo">
                 <h2 class="titulos" style="color: #22418a;">Cursos y talleres</h2>
             </div> -->
@@ -253,7 +306,10 @@
                         <p>Duración: 4 a 8 encuentros <br>
                         Online en vivo <br>
                         Personalizado</p>
-                        <div class="modal-quiero-inscribirme"><a href="">¡QUIERO INSCRIBIRME!</a></div>
+                        <div class="modal-quiero-inscribirme">
+                            <a href="https://wa.me/5491160186557?text=Hola,%20quiero%20inscribirme%20en%20el%20curso%20de%20Mentoría!!" 
+                            target="blanck">¡QUIERO INSCRIBIRME!</a>
+                        </div>
                     </div>
                 </div>
                 <div class="clases-programa"><h3>Programa</h3></div>
@@ -283,19 +339,12 @@
                     <div class="modal-feedback">
                         <div class="feedback">
                             <img src="" alt="">
-                            <h4>Nombre</h4>
-                            <p>Comentarios de la persona</p>
+                            <h4>Elina García Ginebreda, Diseñadora de indumentaria, Bs As.</h4>
+                            <p>Me gustó poder organizar y proyectar mis objetivos, 
+                                me aportó nuevas ideas y generó un gran 
+                                crecimiento en mi emprendimiento.</p>
                         </div>
-                        <div class="feedback">
-                            <img src="" alt="">
-                            <h4>Nombre</h4>
-                            <p>Comentarios de la persona</p>
-                        </div>
-                        <div class="feedback">
-                            <img src="" alt="">
-                            <h4>Nombre</h4>
-                            <p>Comentarios de la persona</p>
-                        </div>
+
                     </div>
                 </div> 
             </div>
@@ -304,7 +353,9 @@
 
     <div id="modal3" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="document.getElementById('modal3').style.display='none'" class="close">&times;</span>
+            <span class="close" onclick="document.getElementById('modal3').style.display='none'; 
+            document.getElementById('back-to-top').style.display='initial'; 
+            document.getElementById('whatsapp').style.display='initial'" class="close">&times;</span>
             <!-- <div class="modal-titulo">
                 <h2 class="titulos" style="color: #22418a;">Cursos y talleres</h2>
             </div> -->
@@ -312,12 +363,19 @@
                 <div class="modal-content-descripcion">
                     <img class='curso-imagen' src="../public/images/fondocursos.png" alt="">
                     <div>
-                        <h2>Aprende a Improvisar</h2>
-                        <p>Introducción a la creatividad con ejercicios para dejar de criticar mis ideas, evitar el NO y encontrar nuevos puntos de vista</p>
+                        <h2>Improvisación Teatral</h2>
+                        <p>¿Qué es la impro? <br> <br>
+                            Es un género teatral con la particularidad que no utiliza libreto, por lo tanto los actores crean, actúan y dirigen sus propias historias saltando al vacío de lo desconocido.
+                            </p>
+                            <p><strong>Beneficios:</strong> Mejora la rapidez de respuesta, Ayuda a combatir la vergüenza, trabajan las emociones de una manera libre y relajada. Trabajo en equipo. Escucha activa. Adaptación al cambio. Anti estrés.
+                            </p>
                         <p>Duración: 12 clases<br>
                         Online en vivo <br>
                         Cupos limitados</p>
-                        <div class="modal-quiero-inscribirme"><a href="">¡QUIERO INSCRIBIRME!</a></div>
+                        <div class="modal-quiero-inscribirme">
+                            <a href='https://wa.me/5491160186557?text=Hola,%20quiero%20inscribirme%20en%20el%20curso%20de%20Improvisación%20Teatral' 
+                            target="blanck">¡QUIERO INSCRIBIRME!</a>
+                        </div>
                     </div>
                 </div>
                 <div class="clases-programa"><h3>Programa</h3></div>
@@ -368,7 +426,9 @@
 
     <div id="modal4" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="document.getElementById('modal4').style.display='none'">&times;</span>
+            <span class="close" onclick="document.getElementById('modal4').style.display='none'; 
+            document.getElementById('back-to-top').style.display='initial'; 
+            document.getElementById('whatsapp').style.display='initial'">&times;</span>
             <!-- <div class="modal-titulo">
                 <h2 class="titulos" style="color: #22418a;">Cursos y talleres</h2>
             </div> -->
@@ -377,10 +437,13 @@
                     <img class='curso-imagen' src="../public/images/fondocursos.png" alt="">
                     <div>
                         <h2>Workshop para Emprendedores</h2>
-                        <p>Introducción a la creatividad con ejercicios para dejar de criticar mis ideas, evitar el NO y encontrar nuevos puntos de vista</p>
+                        <p>En este Workshop vamos a realizar ejercicios especialmente diseñados para “encontrar” nuevas oportunidades de negocio, flexibilidad para poder adaptarnos rápidamente a los cambios y llevar los emprendimientos al próximo nivel.</p>
                         <p>Duración: 1 clase <br>
                         Online en vivo</p>
-                        <div class="modal-quiero-inscribirme"><a href="">¡QUIERO INSCRIBIRME!</a></div>
+                        <div class="modal-quiero-inscribirme">
+                            <a href='https://wa.me/5491160186557?text=Hola,%20quiero%20inscribirme%20en%20el%20curso%20de%20"Workshop%20para%20Emprendedores"' 
+                            target="blanck">¡QUIERO INSCRIBIRME!</a>
+                        </div>
                     </div>
                 </div>
                 <div class="clases-programa"><h3>Programa</h3></div>
@@ -431,7 +494,7 @@
 
     <button onclick="topFunction()" id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i><br>Subir</button>
     
-    <button id="whatsapp" title="Go to top"><span>¡CHARLEMOS!</span><span>&nbsp;&nbsp;</span> <i class="fa fa-whatsapp"></i></button>
+    <a href="https://wa.me/5491160186557" target="blanck"><button id="whatsapp" title="Go to top"><span>¡CHARLEMOS!</span><span>&nbsp;&nbsp;</span> <i class="fa fa-whatsapp"></i></button></a>
 
     <script src="jquery.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
