@@ -5,7 +5,7 @@ if(isset($_POST['submit'])){
     $name = $_POST['name'];
     $cellphone = $_POST['cell'];
     $subject = "Consulta desde WEB GymCreativo";
-    $subjec2t = "Copia de su consulta desde WEB GymCreativo";
+    //$subjec2t = "Copia de su consulta desde WEB GymCreativo";
     $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
     //$message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
 
