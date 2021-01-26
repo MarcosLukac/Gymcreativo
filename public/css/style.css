@@ -417,7 +417,7 @@ input {
     background-color: rgb(0, 201, 50); /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    /*padding: 15px;*/ /* Some padding */
     border-radius: 100%; /* Rounded corners */
     font-size: 18px;
     font-family: 'Subscriber', sans-serif;
@@ -537,6 +537,7 @@ input {
   }
   .clases-descripción {
       color: #ea9423;
+      padding: 10px;
   }
   .experiencia-participantes {
       display: flex;
@@ -546,21 +547,28 @@ input {
       background-color: #22418a;
       padding-bottom: 50px;
       color: #ffffff;
+      margin-top: -30px;
+      border-radius: 30px;
   }
   .modal-feedback {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
   }
   .feedback {
-      margin: 10px;
-      padding: 5px;
+      margin: 25px;
+      padding: 0 15px;
       background-color: #ffffff;
       border-radius: 10px;
       color: #ea9423;
+      width: 35%;
+      flex-grow: 1;
   }
   .div-experiencia {
-      background-color: #22418a;
+      /* background-color: #22418a; */
       border-radius: 0 0 30px 30px;
+      margin-top: -50px;
   }
   /* The Close Button */
   .close {
@@ -806,7 +814,6 @@ input {
     }
     .etapas {
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-around;
     }
     .clases-descripción {
