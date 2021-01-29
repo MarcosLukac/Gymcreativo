@@ -185,6 +185,22 @@ if(isset($_POST['submit'])){
 
             <div class="chateamos-contenido">
                 <h3 class="titulos white-text">Charlemos</h3>
+                <hr>
+                <?php 
+                            $Msg = "";
+                            if(isset($_GET['error']))
+                            {
+                                $Msg = " Please Fill in the Blanks ";
+                                echo '<div class="alert alert-danger">'.$Msg.'</div>';
+                            }
+
+                            if(isset($_GET['success']))
+                            {
+                                $Msg = " Your Message Has Been Sent ";
+                                echo '<div class="alert alert-success">'.$Msg.'</div>';
+                            }
+                        
+                        ?>
                 <div class="charlemos">
                     <div class="redes">
                     <p>Si tenés dudas o querés mas información, <br> ¡escribime!</p>
@@ -192,14 +208,14 @@ if(isset($_POST['submit'])){
                     <a href="https://wa.me/5491160186557" class="footer-links" target="blanck"><i class="fab fa-whatsapp fa-lg white-text"></i></a>    
                     <a href="https://www.linkedin.com/in/santiago-caranza-256723bb/" class="footer-links" target="blanck"><i class="fab fa-linkedin fa-lg white-text"></i></a>
                     </div>
-                    <form action="" method="post" class="form-y-boton">
+                    <form action="mail_handler.php" method="post" class="form-y-boton">
                         <div >
                                 <input class="chateamos-input" type="text" name="name" id="name" placeholder="Nombre:">
                                 <input class="chateamos-input" type="tel" name="cell" id="cell" placeholder="Celular:">
                                 <input class="chateamos-input" type="email" name="email" id="email" placeholder="E-mail:">
                                 <textarea class="chateamos-input" name="message" id="chateamos-message" cols="30" rows="6" placeholder="Mensaje:"></textarea>
                                 <div class="g-recaptcha" data-sitekey="6Lcscz0aAAAAAOVzpoBuJFLeGiptMDCjjlp02hvp"></div>
-                                <input type="submit" value="Enviar" class="chateamos-boton">
+                                <input type="submit" name="submit" value="Enviar" class="chateamos-boton">
                         </div>
                     </form>
                 </div>

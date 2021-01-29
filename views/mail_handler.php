@@ -1,18 +1,29 @@
 <?php 
-if(isset($_POST['submit'])){
-    $to = "marcoslukac@gmail.com"; // Acá va la casilla de Gym Creativo
-    $from = $_POST['email']; // Email del usuario
-    $name = $_POST['name'];
-    $cellphone = $_POST['cell'];
-    $subject = "Consulta desde WEB GymCreativo";
-    //$subjec2t = "Copia de su consulta desde WEB GymCreativo";
-    $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
-    //$message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
 
-    $headers = "De:" . $from;
-    //$headers2 = "From:" . $to;
-    mail($to,$subject,$message,$headers);
-    //mail($from,$subject2,$message2,$headers2); para mandar una copia al usuario
-    echo "Mensaje enviado. Muchas gracias " . $first_name . ", dentro de poco estaremos en contacto.";
+    if(isset($_POST['submit']))
+    {
+       $UserName = $_POST['name'];
+       $Phone = $_POST['tel'];
+       $Email = $_POST['email'];
+       $Subject = 'Contacto desde WEB Gym Creativo';
+       $Msg = $_POST['message'];
+
+       if(empty($UserName) || empty($Email) || empty($Phone) || empty($Msg))
+       {
+           header('location:index.php?error');
+       }
+       else
+       {
+           $to = "marcoslukac@gmail.com";
+
+           if(mail($to,$Subject,$Msg,$Email))
+           {
+               header("location:index.php?success");
+           }
+       }
+    }
+    else
+    {
+        header("location:index.php");
     }
 ?>
