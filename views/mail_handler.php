@@ -10,7 +10,7 @@
 
        if(empty($UserName) || empty($Email) || empty($Phone) || empty($Msg))
        {
-           header('location:index.php?error');
+           header('location:index.php/#chateamos?error');
        }
        else
        {
@@ -18,12 +18,12 @@
 
            if(mail($to,$Subject,$Msg,$Email))
            {
-               header("location:index.php?success");
+               header("location:index.php/#chateamos?success");
            }
        }
     }
     else
     {
-        header("location:index.php");
+        header("location:index.php/#chateamos");
     }
 ?>

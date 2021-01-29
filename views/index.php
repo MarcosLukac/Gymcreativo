@@ -190,13 +190,13 @@ if(isset($_POST['submit'])){
                             $Msg = "";
                             if(isset($_GET['error']))
                             {
-                                $Msg = " Please Fill in the Blanks ";
+                                $Msg = " Por favor revise los campos ";
                                 echo '<div class="alert alert-danger">'.$Msg.'</div>';
                             }
 
                             if(isset($_GET['success']))
                             {
-                                $Msg = " Your Message Has Been Sent ";
+                                $Msg = " Su mensaje se envió exitosamente ";
                                 echo '<div class="alert alert-success">'.$Msg.'</div>';
                             }
                         
