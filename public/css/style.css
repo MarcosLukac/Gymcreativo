@@ -4,10 +4,11 @@
     src: url("../design/Fonts_Lato/SUBSCRIBER-Regular.otf") format("opentype");
 }
 body {
-    width: 100%;
     margin: 0;
     overflow-x: hidden;
 }
+
+
 
 * {
     font-family: 'Lato', sans-serif;
@@ -184,8 +185,6 @@ input#menu {
 /* diseño creatividad */
 .creatividad {
     background-color: #22418a;
-    /*display: flex;
-    flex-direction: column;*/
     color: #ffffff;
     width: 100%;
     margin: auto;
@@ -193,16 +192,24 @@ input#menu {
     padding-top: 20px;
 }
 
+.olas-sobre-mi {
+    position: relative;
+    bottom: -5px;
+}
+
+.creatividad-texto {
+    width: 90%;
+}
+
 .card-slider{
-    height: 450px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .card {
-    height: 400px;
+    
     width: 250px;
     border-radius: 20px;
     margin: 10px 15px;
@@ -421,9 +428,12 @@ input {
     border-radius: 100%; /* Rounded corners */
     font-size: 18px;
     font-family: 'Subscriber', sans-serif;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     color: #ffffff;
+}
+.charlemos-whatsapp {
+    display: none;
 }
 
 
@@ -448,15 +458,20 @@ input {
     background-color: #ea9423; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    padding: 0px; /* Some padding */
     border-radius: 100%; /* Rounded corners */
-    font-size: 18px;
+    font-size: 10px;
     font-family: 'Subscriber', sans-serif;
     font-size: 25px;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     color: #ffffff;
 }
+
+.subir {
+    display: none;
+}
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -749,7 +764,6 @@ input {
     /* diseño footer  */
     /* fin footer  */
     .card-slider{
-        height: 450px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -757,7 +771,6 @@ input {
     }
     
     .card {
-        height: 300px;
         width: 200px;
         border-radius: 20px;
         margin: 10px 15px;
@@ -770,8 +783,7 @@ input {
         max-width: 200px;
     }
     
-    .card-text {
-    }
+    
     .waves {
         display: block;
     }
@@ -795,7 +807,7 @@ input {
         margin: 0.6em 0;
         width: 80%;
     }
-    ..gym-creativo-texto{
+    .gym-creativo-texto{
         text-align: left;
     }
 
@@ -828,6 +840,51 @@ input {
     }
 
 
+    #whatsapp {
+        display: block; /* Hidden by default */
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        width: 200px;
+        height: 50px;
+        color: #ffffff;
+    }
+    .charlemos-whatsapp {
+        display: inline-block;
+        font-size: 18px;
+        font-family: 'Subscriber', sans-serif;
+        margin: 0;
+    }
+    .fa-whatsapp { 
+        display: inline-block;
+    }
+
+    #back-to-top {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 1%; /* Place the button at the bottom of the page */
+        left: 80%; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: #ea9423; /* Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 100%; /* Rounded corners */
+        font-size: 18px;
+        font-family: 'Subscriber', sans-serif;
+        font-size: 25px;
+        width: 80px;
+        height: 80px;
+        color: #ffffff;
+    }
+    .subir {
+        display: initial;
+        font-size: 18px;
+        font-family: 'Subscriber', sans-serif;
+        font-size: 25px;
+    }
     /* fin modales  */
 }
 
