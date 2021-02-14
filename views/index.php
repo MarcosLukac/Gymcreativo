@@ -1,19 +1,25 @@
-<?php 
-if(isset($_POST['submit'])){
-    $to = "marcoslukac@gmail.com"; // Acá va la casilla de Gym Creativo
-    $from = $_POST['email']; // Email del usuario
-    $name = $_POST['name'];
-    $cellphone = $_POST['cell'];
-    $subject = "Consulta desde WEB GymCreativo";
-    $subjec2t = "Copia de su consulta desde WEB GymCreativo";
-    $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
-    //$message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+<?php
 
-    $headers = "De:" . $from;
-    //$headers2 = "From:" . $to;
-    mail($to,$subject,$message,$headers);
-    //mail($from,$subject2,$message2,$headers2); para mandar una copia al usuario
-    echo "Mensaje enviado. Muchas gracias " . $first_name . ", dentro de poco estaremos en contacto.";
+if(isset($_POST['submit']))
+{
+    $to = "marcoslukac@gmail.com";
+    $subject = "Consultas desde web GYM Creativo";
+    $txt = $_POST['message'];
+    $headers .= "Reply-To: GymCreativo <marcoslukac@gmail.com>\r\n";
+    $headers .= "Return-Path: GymCreativo <marcoslukac@gmail.com>\r\n";
+    $headers .= "From:  GymCreativo <marcoslukac@gmail.com>\r\n";
+
+    if(empty($UserName) || empty($Email) || empty($Phone) || empty($Msg))
+        {
+            header('location:index.php/#chateamos?error');
+        }
+        else
+        {
+            if(mail($to,$subject,$txt,$headers))
+            {
+                header("location:index.php/#chateamos?success");
+            }
+        }
     }
 ?>
 
@@ -192,14 +198,14 @@ if(isset($_POST['submit'])){
                     <a href="https://wa.me/5491160186557" class="footer-links" target="blanck"><i class="fab fa-whatsapp fa-lg white-text"></i></a>    
                     <a href="https://www.linkedin.com/in/santiago-caranza-256723bb/" class="footer-links" target="blanck"><i class="fab fa-linkedin fa-lg white-text"></i></a>
                     </div>
-                    <form action="" method="post" class="form-y-boton">
+                    <form action="mail_handler.php" method="post" class="form-y-boton">
                         <div >
                                 <input class="chateamos-input" type="text" name="name" id="name" placeholder="Nombre:">
                                 <input class="chateamos-input" type="tel" name="cell" id="cell" placeholder="Celular:">
                                 <input class="chateamos-input" type="email" name="email" id="email" placeholder="E-mail:">
                                 <textarea class="chateamos-input" name="message" id="chateamos-message" cols="30" rows="6" placeholder="Mensaje:"></textarea>
                                 <div class="g-recaptcha" data-sitekey="6Lcscz0aAAAAAOVzpoBuJFLeGiptMDCjjlp02hvp"></div>
-                                <input type="submit" value="Enviar" class="chateamos-boton">
+                                <input type="submit" name="submit" value="Enviar" class="chateamos-boton">
                         </div>
                     </form>
                 </div>

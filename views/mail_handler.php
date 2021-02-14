@@ -1,18 +1,45 @@
-<?php 
-if(isset($_POST['submit'])){
-    $to = "marcoslukac@gmail.com"; // Acá va la casilla de Gym Creativo
-    $from = $_POST['email']; // Email del usuario
-    $name = $_POST['name'];
-    $cellphone = $_POST['cell'];
-    $subject = "Consulta desde WEB GymCreativo";
-    //$subjec2t = "Copia de su consulta desde WEB GymCreativo";
-    $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
-    //$message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+<?php
 
-    $headers = "De:" . $from;
-    //$headers2 = "From:" . $to;
-    mail($to,$subject,$message,$headers);
-    //mail($from,$subject2,$message2,$headers2); para mandar una copia al usuario
-    echo "Mensaje enviado. Muchas gracias " . $first_name . ", dentro de poco estaremos en contacto.";
+if(isset($_POST['submit']))
+{
+    $UserName = $_POST['name'];
+    $Email = $_POST['email'];
+    $Phone = $_POST['cell'];
+    $Message = $_POST['message'];
+    $to = "marcoslukac@gmail.com";
+    $subject = "Consultas desde web GYM Creativo";
+    $txt = 'De: ' .$UserName."\n";
+    $txt = 'Correo de contacto: ' .$Email."\n"; 
+    $txt = 'Celular: ' .$Phone."\n";
+    $txt = 'Mensaje: ' .$Message;
+    $headers .= "Reply-To: GymCreativo <marcoslukac@gmail.com>\r\n";
+    $headers .= "Return-Path: GymCreativo <marcoslukac@gmail.com>\r\n";
+    $headers .= "From:  GymCreativo <marcoslukac@gmail.com>\r\n";
+
+    if(empty($UserName) || empty($Email) || empty($Phone) || empty($Message))
+        {?>
+            <script language="javascript" type="text/javascript">
+            alert('Su mensaje no pudo ser enviado. Por favor revise que todos los campos estén completos.');
+            window.location.href = 'index.php/#chateamos';
+           </script>
+           <?php
+        }
+        else{
+            if(mail($to,$subject,$txt,$headers))
+            {?>
+                <script language="javascript" type="text/javascript">
+                alert('Gracias por su mensaje. En breve estaremos respondiendo.');
+                window.location.href = 'index.php';
+                </script>
+                <?php
+            }
+            else{?>
+                <script language="javascript" type="text/javascript">
+                alert('Thank you for the message. We will contact you shortly.');
+                window.location.href = 'index.html';
+                </script>
+                <?php
+            }
+        }
     }
 ?>
