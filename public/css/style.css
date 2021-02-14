@@ -43,6 +43,10 @@ body {
     margin: auto;
     margin-top: 150px;
 }
+.ola-superior-sobre-mi {
+    position: relative;
+    top: -1px;
+}
 .orange-text {
     color: #ea9423;
 }
@@ -416,7 +420,7 @@ input {
 #whatsapp {
     display: block; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 15%; /* Place the button at the bottom of the page */
+    bottom: 12%; /* Place the button at the bottom of the page */
     left: 80%; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
@@ -453,7 +457,7 @@ input {
     bottom: 1%; /* Place the button at the bottom of the page */
     left: 80%; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
+    border: 1px white solid; 
     outline: none; /* Remove outline */
     background-color: #ea9423; /* Set a background color */
     color: white; /* Text color */
@@ -865,7 +869,7 @@ input {
         bottom: 1%; /* Place the button at the bottom of the page */
         left: 80%; /* Place the button 30px from the right */
         z-index: 99; /* Make sure it does not overlap */
-        border: none; /* Remove borders */
+        border: 1px white solid; 
         outline: none; /* Remove outline */
         background-color: #ea9423; /* Set a background color */
         color: white; /* Text color */
