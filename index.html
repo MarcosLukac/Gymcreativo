@@ -23,29 +23,26 @@
             <div class="encabezado-logo">
                 <img class="encabezado-logo-imagen" src="./public/design/logo-horizontal-fondo-claro-chato.png" alt="imagen de prueba">
             </div>
-            <nav class="encabezado-navbar">
-                <input type="checkbox" id="menu" class="navbar-checkbox">
-                <label for="menu"><i class="menu-icon fas fa-bars fa-lg"></i></label>
-                <div class="navbar-collapsible-menu">
-                    <ul class="collapsible-menu-list">
-                        <li>
-                            <a href="#gym-creativo" class="menu-list-links">¿QUE ES EL GYM CREATIVO</a>
-                        </li>
-                        <li>
-                            <a href="#sobre-mi" class="menu-list-links">SOBRE MI</a>
-                        </li>
-                        <li>
-                            <a href="#cursos" class="menu-list-links">CURSOS</a>
-                        </li>
-                        <li>
-                            <a href="#capacitaciones-empresariales" class="menu-list-links">CAPACITACIONES</a>
-                        </li>
-                        <li>
-                            <a href="#chateamos" class="menu-list-links">¡CHARLEMOS!</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <span for="menu" id="menu" class="navbar-icon"><i class="menu-icon fas fa-bars fa-lg"></i></span>
+            
+            <ul class="collapsible-menu-list menu-visible">
+                <li>
+                    <a href="#gym-creativo" class="menu-list-links">¿QUE ES EL GYM CREATIVO</a>
+                </li>
+                <li>
+                    <a href="#sobre-mi" class="menu-list-links">SOBRE MI</a>
+                </li>
+                <li>
+                    <a href="#cursos" class="menu-list-links">CURSOS</a>
+                </li>
+                <li>
+                    <a href="#capacitaciones-empresariales" class="menu-list-links">CAPACITACIONES</a>
+                </li>
+                <li>
+                    <a href="#chateamos" class="menu-list-links">¡CHARLEMOS!</a>
+                </li>
+            </ul>
+           
         </div>  
     </header>
     <main class="main">
@@ -81,7 +78,7 @@
             </div>
             <div class="card-slider owl-carousel owl-theme">
                 <div class="card item">
-                    <img src="./public/images/fondocursos.png">
+                    <img src="./public/images/CURSOS_DESARROLLA TU CREATIVIDAD.png">
                     <div class="card-text">
                         <p><b>Curso de Desarrollo Creativo</b></p>
                         <p>Duración: 4 clases<br>Online en vivo<br>Cupos limitados</p>
@@ -91,7 +88,7 @@
                     </div>
                 </div>
                 <div class="card item">
-                    <img src="./public/images/fondocursos.png">
+                    <img src="./public/images/CURSOS_MENTORIAS.png">
                     <div class="card-text">
                         <p><b>Mentorías<br>&nbsp;</b></p>
                         <p>Duración: 4/8 encuentros<br>Online en vivo<br>Personalizado</p>
@@ -101,7 +98,7 @@
                     </div>
                 </div>
                 <div class="card item">
-                    <img src="./public/images/fondocursos.png">
+                    <img src="./public/images/CURSOS_IMPRO.png">
                     <div class="card-text">
                         <p><b>Improvisación Teatral<br>&nbsp;</b></p>
                         <p>Duración: 12 clases<br>Online en vivo<br>Cupos limitados</p>
@@ -111,7 +108,7 @@
                     </div>
                 </div>
                 <div class="card item">
-                    <img src="./public/images/fondocursos.png">
+                    <img src="./public/images/CURSOS_EMPRENDEDORES.png">
                     <div class="card-text">
                         <p><b>Workshop para<br>emprendedores</b></p>
                         <p>Duración: 1 clase<br>Online en vivo<br>&nbsp;</p>
@@ -524,6 +521,8 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
     </script>
+
+    <script src="./public/js/collapsibleMenu.js"></script>
 
 </body>
 </html>
